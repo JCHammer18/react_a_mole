@@ -9,6 +9,7 @@ export default function MoleContainer(props) {
     const handleMoleClicked = () => {
         if (isShowing) {
             props.addToScore(1);
+            setIsShowing(false);
         }
     }
     return <div>
